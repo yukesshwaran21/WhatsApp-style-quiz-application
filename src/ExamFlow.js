@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getExams, getSubjects, getChapters, getUsers, startSession } from './api';
 
-const OPTION_LABELS = ['A', 'B', 'C', 'D'];
-
 export default function ExamFlow({ onSessionStart }) {
   const [step, setStep] = useState('user'); // user → exam → subject → chapter
   const [users, setUsers] = useState([]);
@@ -12,7 +10,7 @@ export default function ExamFlow({ onSessionStart }) {
   const [selectedUser, setSelectedUser] = useState('');
   const [selectedExam, setSelectedExam] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState(null);
-  const [selectedChapter, setSelectedChapter] = useState(null);
+  const [, setSelectedChapter] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

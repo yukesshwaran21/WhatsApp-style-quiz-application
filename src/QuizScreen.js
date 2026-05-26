@@ -23,7 +23,7 @@ export default function QuizScreen({ session, context, onFinish, onRetry }) {
   const [finalResult, setFinalResult] = useState(null);
   const [timer, setTimer] = useState(0);
   const [questionShownAt, setQuestionShownAt] = useState(new Date());
-  const [score, setScore] = useState(0);
+  const [, setScore] = useState(0);
 
   const timerRef = useRef(null);
   const chatEndRef = useRef(null);

@@ -13,7 +13,7 @@ import {
 import {
   LineChart, Line, BarChart, Bar, PieChart, Pie, Cell,
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer, Legend, RadialBarChart, RadialBar,
+  ResponsiveContainer, Legend, 
 } from 'recharts';
 
 const COLORS = ['#16a34a', '#0d9488', '#0284c7', '#d97706', '#dc2626', '#7c3aed'];
